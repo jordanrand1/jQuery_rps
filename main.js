@@ -29,8 +29,6 @@ $(document).ready(function(){
   function display_results(){
     $results.append(myDiv)
     $results.append(botDiv)
-    console.log(myChoice)
-    console.log(botChoice)
     if (myChoice === botChoice){
       draw()
       return

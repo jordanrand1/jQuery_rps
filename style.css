@@ -5,6 +5,10 @@
   height: 100px;
 }
 
+#rock:hover{
+  animation: shake 1s infinite;
+}
+
 #paper{
   background: rgb(252,199,62) url('paper.png') center no-repeat;
   margin: 0 auto; 
@@ -12,11 +16,19 @@
   height: 100px;
 }
 
+#paper:hover{
+  animation: shake 1s infinite;
+}
+
 #scissors{
   background: rgb(233,61,111) url('scissors.png') center no-repeat;
   margin: 0 auto; 
   flex-grow: 1;
   height: 100px;
+}
+
+#scissors:hover{
+  animation: shake 1s infinite;
 }
 
 #wrapper{
@@ -53,4 +65,50 @@ body{
 .counter{
   margin: 0;
   padding-top: 20px;
+}
+
+@keyframes shake{
+  0%{
+    background-position-x: 50%;
+  }
+
+  10%{
+    background-position-x: 45%;
+  }
+  
+  20%{
+    background-position-x: 55%;
+  }
+
+  30%{
+    background-position-x: 45%;
+  }
+
+  40%{
+    background-position-x: 55%;
+  }
+
+  50%{
+    background-position-x: 45%;
+  }
+
+  60%{
+    background-position-x: 55%;
+  }
+
+  70%{
+    background-position-x: 45%;
+  }
+
+  80%{
+    background-position-x: 55%;
+  }
+
+  90%{
+    background-position-x: 45%;
+  }
+
+  100%{
+    background-position-x: 50%;
+  }
 }

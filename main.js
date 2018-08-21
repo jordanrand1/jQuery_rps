@@ -2,7 +2,6 @@ $(document).ready(function(){
 
   // Variables
   var $choices = $('.choice')
-  var $options = ['rock', 'paper', 'scissors']
   var $results = $('#results')
   var $winOrLose = $('#winOrLose')
   var $winsDiv = $('#winsDiv')
@@ -22,7 +21,8 @@ $(document).ready(function(){
   }
 
   function botPick(){
-    botChoice = $options[Math.floor(Math.random() * $options.length)]
+    options = ['rock','paper','scissors']
+    botChoice = options[Math.floor(Math.random() * options.length)]
     return '<div id="' + botChoice +'"></div>'
   }
 

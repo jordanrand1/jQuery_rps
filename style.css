@@ -1,0 +1,56 @@
+#rock{
+  background: rgb(23,92,150) url('rock.png') center no-repeat;
+  margin: 0 auto; 
+  flex-grow: 1;
+  height: 100px;
+}
+
+#paper{
+  background: rgb(252,199,62) url('paper.png') center no-repeat;
+  margin: 0 auto; 
+  flex-grow: 1;
+  height: 100px;
+}
+
+#scissors{
+  background: rgb(233,61,111) url('scissors.png') center no-repeat;
+  margin: 0 auto; 
+  flex-grow: 1;
+  height: 100px;
+}
+
+#wrapper{
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#info{
+  width: 100%;
+  height: 400px;
+  background-color: darkgray;
+  text-align: center;
+}
+
+.container{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+body{
+  background-color: black;
+}
+
+.infoText{
+  text-align: center;
+  background-color: darkgrey;
+  margin: 0;
+  flex-grow: 1;
+  padding: 10px;
+}
+
+.counter{
+  margin: 0;
+  padding-top: 20px;
+}
